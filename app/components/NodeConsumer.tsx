@@ -16,7 +16,7 @@ export function NodeConsumer() {
       className="absolute rounded-lg border-4 select-none border-neutral-700 cursor-grab touch-none bg-neutral-100 dark:bg-neutral-400 dark:border-neutral-100"
     >
       <Handle handleRef={handleRef} input left={50} />
-      <Content contentType={ContentKind.Number} contentRef={contentRef} />
+      <Content contentType={ContentKind.Welcome} contentRef={contentRef} />
       <Handle handleRef={handleRef} output left={50} />
     </article>
   );
