@@ -349,7 +349,7 @@ export default function Index() {
         id="math-node1"
       >
         <button
-          className="absolute top-0 left-1/4 w-2 h-2 rounded-full ring-2 -translate-x-1/2 -translate-y-2/3 bg-sky-500 cursor-crosshair ring-neutral-800 dark:bg-sky-800 dark:ring-neutral-300"
+          className={`${NODE_COLORS.math} absolute top-0 left-1/4 w-2 h-2 rounded-full ring-2 -translate-x-1/2 -translate-y-2/3 cursor-crosshair ring-neutral-800 dark:ring-neutral-300`}
           ref={inputPort1}
           id="inputPort1"
           data-port-type="input"
@@ -368,7 +368,7 @@ export default function Index() {
           onDoubleClick={() => handleDoubleClick}
         />
         <button
-          className="absolute top-0 left-3/4 w-2 h-2 rounded-full ring-2 -translate-x-1/2 -translate-y-2/3 bg-sky-500 cursor-crosshair ring-neutral-800 dark:bg-sky-800 dark:ring-neutral-300"
+          className={`${NODE_COLORS.math} absolute top-0 left-3/4 w-2 h-2 rounded-full ring-2 -translate-x-1/2 -translate-y-2/3 cursor-crosshair ring-neutral-800 dark:ring-neutral-300`}
           ref={inputPort2}
           id="inputPort2"
           data-port-type="input"
@@ -397,7 +397,7 @@ export default function Index() {
         </div>
       </article>
       {/* connectors */}
-      <svg className="absolute pointer-events-none" height="100%" width="100%">
+      <svg className="relative pointer-events-none" height="100%" width="100%">
         <style>
           {`
                 #stop1 {
